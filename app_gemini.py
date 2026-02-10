@@ -166,7 +166,6 @@ best_phrases = st.session_state['best_phrases']
 left_col, _, right_col = st.columns([7.8, .8, 8])
 
 
-# st.markdown(bullet_diagram.to_html(), unsafe_allow_html=True)
 
 with left_col:
     st.write("\n")
