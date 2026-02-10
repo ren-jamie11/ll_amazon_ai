@@ -272,7 +272,7 @@ def get_openai_client(api_key):
         st.session_state.openai_client = OpenAI(api_key=api_key)
     return st.session_state.openai_client
 
-client = get_openai_client(openai_api_key)
+client = get_openai_client(st.secrets["OPENAI_KEY"])
 
 @st.cache_resource
 def get_gemini_client(api_key):
@@ -280,7 +280,7 @@ def get_gemini_client(api_key):
         st.session_state.gemini_client = genai.Client(api_key=api_key)
     return st.session_state.gemini_client
 
-gemini_client = get_gemini_client(gemini_api_key)
+gemini_client = get_gemini_client(st.secrets["GEMINI_KEY"])
 
 st.session_state.setdefault("photo_result", None)
 st.session_state.setdefault("title_result", None)

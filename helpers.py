@@ -4,11 +4,6 @@ import re
 import pandas as pd
 from collections import Counter
 
-
-
-openai_api_key = "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"
-gemini_api_key = 'AIzaSyDLUbUdvOfqtihYUmYDutu4_8CpmsQZpyo'
-
 # OpenAI Image Processing Functions
 
 image_describe_system_instructions = """You are a writer for an Amazon seller of photo frames.
